@@ -136,6 +136,24 @@ public:
 		}
 	}
 
+	void save(std::string f){
+		for(size_t i=0;i<n-1;++i){
+			W[i].save(f + "_W_" + std::to_string(i));
+		}
+
+		for(size_t i=0;i<n-1;++i){
+			B[i].save(f + "_B_" + std::to_string(i));
+		}
+	}
+	void load(std::string f){
+		for(size_t i=0;i<n-1;++i){
+			W[i].load(f + "_W_" + std::to_string(i));
+		}
+		for(size_t i=0;i<n-1;++i){
+			B[i].load(f + "_B_" + std::to_string(i));
+		}
+	}
+
 	double error(){
 		return loss;
 	}

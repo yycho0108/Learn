@@ -1,5 +1,5 @@
-#ifndef __UTILITY_H__
-#define __UTILITY_H__
+#ifndef __PARSER_H__
+#define __PARSER_H__
 #include <iostream>
 #include <vector>
 #include <cmath>
